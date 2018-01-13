@@ -136,7 +136,6 @@ function resetSyncState(reset, doPath) {
 }
 function loadEntriesFromJournalJson(doPath) {
   const fs = require('fs');
-  const hash = require('object-hash');
   // load dayone2 JSON file
   let journalJson = JSON.parse(fs.readFileSync(`${doPath}/Journal.json`, 'utf8'));
   if (journalJson['metadata']['version'] !== '1.0') {
