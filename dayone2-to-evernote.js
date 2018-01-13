@@ -54,7 +54,10 @@ function loadSyncLog(doPath, filename) {
 
 function prepareEvernotePrarmsFile(doPath, doNote, notebookName) {
   let params = {};
-  params.withText = doNote['text'].replace(/!\[\].*\)\n\n/g, '').replace(/!\[\].*\)/g, ''); // remove placeholder for images
+  params.withText = '';
+  if (doNote['text']) {
+    params.withText = doNote['text'].replace(/!\[\].*\)\n\n/g, '').replace(/!\[\].*\)/g, '').trim(); // remove placeholder for images
+  }
   params.title = getNoteTitle(params.withText);
   params.notebook = notebookName;
   if (doNote['tags'] == undefined) doNote['tags'] = [];
