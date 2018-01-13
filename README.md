@@ -1,6 +1,6 @@
 
 ## dayone-to-evernote
-Import Day One 2 journals to Evernote on macOS
+Import Day One 2 JSON(.zip) to Evernote on macOS
 
 ## Install
 ```
