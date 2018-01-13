@@ -8,7 +8,7 @@ npm install -g dayone2-to-evernote
 ```
 ## Usage
 ```
-Usage: dayone2-to-evernote [options] <Journal_dayone_dir>
+Usage: dayone2-to-evernote [options] <unziped_Journal_dayone_dir>
 
 Options:
 
